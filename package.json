@@ -1,0 +1,46 @@
+{
+  "name": "sensitive-word",
+  "version": "1.0.0",
+  "description": "filter out alist of sensitive words",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "dev": "watch 'npm build' src",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdoutelb/sensitive-word.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Abdoutelb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdoutelb/sensitive-word/issues"
+  },
+  "homepage": "https://github.com/abdoutelb/sensitive-word#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-latest": "^6.24.0",
+    "jest": "^19.0.2",
+    "np": "^2.13.1",
+    "watch": "^1.0.1"
+  },
+  "dependencies": {
+    "np": "^2.13.1"
+  }
+}
